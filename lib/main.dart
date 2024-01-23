@@ -75,7 +75,7 @@ class _ToDoListState extends State<ToDoList> {
             ElevatedButton(
               onPressed: () {
                 _addTask(taskController.text);
-                Navigator.of(context).pop();
+                Navigator.pop(context);
               },
               child: Text("Add"),
             ),
@@ -88,17 +88,6 @@ class _ToDoListState extends State<ToDoList> {
   void _addTask(String task) {
     setState(() {
       tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-      tasks.add(task);
-
-
-
     });
   }
 
